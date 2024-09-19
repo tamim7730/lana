@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تميم ❤️ لانا</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;700&display=swap');
+        
+        body {
+            margin: 0;
+            font-family: 'Cairo', sans-serif;
+            background-color: #ffe3e3;
+            color: #fff;
+            text-align: center;
+            overflow-x: hidden;
+        }
+
+        /* القلب النابض في الخلفية */
+        .heart-background {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 200px;
+            height: 180px;
+            background-color: #ff4d6d;
+            border-radius: 50% 50% 0 0;
+            animation: heartbeat 1.5s infinite;
+        }
+
+        .heart-background:before,
+        .heart-background:after {
+            content: '';
+            position: absolute;
+            width: 200px;
+            height: 180px;
+            background-color: #ff4d6d;
+            border-radius: 50%;
+        }
+
+        .heart-background:before {
+            top: -100px;
+            left: 0;
+        }
+
+        .heart-background:after {
+            left: 100px;
+            top: 0;
+        }
+
+        @keyframes heartbeat {
+            0%, 100% {
+                transform: translate(-50%, -50%) scale(1);
+            }
+            50% {
+                transform: translate(-50%, -50%) scale(1.1);
+            }
+        }
+
+        /* تأثير النصوص */
+        h1 {
+            font-size: 3em;
+            margin-top: 150px;
+            animation: fadeInUp 2s ease-out forwards;
+            color: #b56576;
+            text-shadow: 0 0 10px rgba(255,255,255,0.8);
+        }
+
+        .names {
+            font-size: 4em;
+            margin-top: 20px;
+            animation: pulseText 3s infinite;
+            color: #ff4d6d;
+        }
+
+        .poem {
+            font-size: 1.5em;
+            margin-top: 30px;
+            animation: fadeInUp 3s ease-out forwards;
+            color: #ffebf0;
+        }
+
+        /* تأثيرات أخرى للنصوص */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes pulseText {
+            0%, 100% {
+                transform: scale(1);
+                color: #ff4d6d;
+            }
+            50% {
+                transform: scale(1.1);
+                color: #fff;
+            }
+        }
+
+        /* الفوتر */
+        footer {
+            margin-top: 100px;
+            font-size: 1.2em;
+            color: #b56576;
+            text-shadow: 0 0 10px rgba(255,255,255,0.8);
+        }
+
+        /* تقسيم الصفحة */
+        section {
+            padding: 100px 20px;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        section:nth-of-type(odd) {
+            background-color: #ffccd5;
+        }
+
+        section:nth-of-type(even) {
+            background-color: #ff4d6d;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- القلب النابض في الخلفية -->
+    <div class="heart-background"></div>
+
+    <!-- الواجهة الأولى -->
+    <section>
+        <h1>أهلاً بكِ في عالمي</h1>
+        <div class="names">تميم ❤️ لانا</div>
+        <div class="poem">يا حبيبتي لانا، أنتِ قلبي ونبضي وأغلى ما أملك.</div>
+    </section>
+
+    <!-- الواجهة الثانية -->
+    <section>
+        <h1>أحبكِ إلى الأبد</h1>
+        <div class="names">تميم ❤️ لانا</div>
+        <div class="poem">يا أجمل قصيدة غزل، كل نبضة من قلبي تهتف باسمكِ.</div>
+    </section>
+
+    <!-- الفوتر -->
+    <footer>
+        تصميم بإحساس من تميم إلى لانا ❤️
+    </footer>
+
+</body>
+</html>
